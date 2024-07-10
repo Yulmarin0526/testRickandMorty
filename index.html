@@ -1,82 +1,127 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personajes de Rick and Morty</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        .title {
-            margin: 30px 0;
-            font-size: 30px;
-            font-weight: bold;
-        }
-        .character-row {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 45px;
-        }
-        .character {
-            margin: 0 10px;
-            text-align: center;
-            border: 2px solid black; /* Borde para cada personaje */
-            padding: 20px; /* Espacio interior para separar el contenido del borde */
-            width: 220px; /* Ancho total del contenedor */
-        }
-        .character img {
-            width: 180px; /* Tamaño fijo para las imágenes */
-            height: 180px; /* Tamaño fijo para las imágenes */
-            object-fit: cover; /* Mantener proporción */
-            display: block;
-            margin: 0 auto 30px; /* Margen inferior para separar la imagen de la información */
-        }
-        .character-name {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .character-info {
-            font-size: 16px;
-        }
-    </style>
+    <title>Document</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./ESTILOS/style.css">
+    <link rel="stylesheet" href="css/mq.css">
+
+
+    <!-- <STyle>
+       h2{
+         color: blue;
+         }
+        </STyle> -->
 </head>
-<body>
-    <div class="title">Personajes de Rick and Morty</div>
 
-    <div class="character-row">
-        <div class="character">
-            <img src="./imagenes/descarga.jpeg" alt="Rick Sanchez">
-            <div class="character-name">Rick Sanchez</div>
-            <div class="character-info">Género: Masculino<br>Especie: Humano</div>
-        </div>
-        <div class="character">
-            <img src="./imagenes/Morty Smith.jpeg" alt="Morty Smith">
-            <div class="character-name">Morty Smith</div>
-            <div class="character-info">Género: Masculino<br>Especie: Humano</div>
-        </div>
-        <div class="character">
-            <img src="./imagenes/Summer Sanchez.jpeg" alt="Summer Sanchez">
-            <div class="character-name">Summer Sanchez</div>
-            <div class="character-info">Género: Femenino<br>Especie: Humano</div>
-        </div>
-    </div>
+<body> <!-- style="background:red ;" -->
+     
+    <div class="contenedor" > 
 
-    <div class="character-row">
-        <div class="character">
-            <img src="./imagenes/Beth smith.jpeg" alt="Beth Smith">
-            <div class="character-name">Beth Smith</div>
-            <div class="character-info">Género: Femenino<br>Especie: Humano</div>
-        </div>
-        <div class="character">
-            <img src="./imagenes/Jerry Smith.jpeg" alt="Jerry Smith">
-            <div class="character-name">Jerry Smith</div>
-            <div class="character-info">Género: Masculino<br>Especie: Humano</div>
-        </div>
-    </div>
+    <!-- LA CABECERA -->
+
+    <header>
+        <nav>
+            <a href="./index.html"><img src="./IMAGENES/LOGOjpeg.jpeg" class="img-logo"></a>
+
+            <ul>
+
+
+                <li> <a href="index.html"> Inicio</a> </li>
+                <li> <a href="./recetab.html"> Receta Mexico</a> </li>
+                <li> <a href="./recetac.html"> Receta Colombia </a> </li>
+                <li> <a href="#Saludable "> Comida saludable </a> </li>
+            </ul>
+            
+        </nav>
+
+        <img src="./IMAGENES/imagenq opcion2.jpeg" alt="" width="900px" height="400px">
+
+        <!-- SECCION 1 VIDEO Y ARTICULO -->
+
+        <Section class="seccion1">
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/BzIWNF2u3nc"
+                title="🍣 California Roll EMPANIZADO | El mejor SUSHI FRITO" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <article class="texto">
+                <h2> Recetas del mundo </h2>
+                <p>La comida del mundo es un tesoro de sabores y tradiciones que reflejan la diversidad cultural y la riqueza culinaria de cada región. Desde los exquisitos y variados platos de la cocina mediterránea, hasta las especias vibrantes y aromas intensos de la gastronomía asiática, pasando por la comida reconfortante y picante de América Latina, cada bocado es una experiencia única.</p>
+
+                <div class="boton">
+                    <a href="#">
+                        <div> Mas informacion</div>
+                    </a>
+                </div>
+
+            </article>
+
+        </SECtion>
+        <!-- SECCION 2- IMAGEN TEXTO -->
+
+        <SECtion>
+            <FIGure class="img-art">
+                <img src="./IMAGENES/ARTICULO 2.jpeg" alt="" width="900px" height="400px">>
+            </FIGure>
+
+            <div class="cont-art">
+                <h2> Dos recetas deliciosas para las fiestas </h2>
+                <p>Receta Mexicana: En una olla grande, calienta una cucharada de aceite a fuego medio y dora 500 g de carne de cerdo (pierna o paleta) cortada en trozos pequeños. Agrega una cebolla picada y dos dientes de ajo picados, y cocina hasta que estén transparentes. Vierte una taza de jugo de naranja y una taza de caldo de pollo en la olla. Añade una hoja de laurel, sal y pimienta al gusto. Reduce el fuego y cocina a fuego lento durante 1-2 horas, o hasta que la carne esté tierna y se deshaga fácilmente. Retira la carne de la olla y desmenúzala con dos tenedores. Sirve la carne desmenuzada en tortillas de maíz y decora con cilantro fresco y cebolla picada.
+                    <br>
+                    <br>             
+                    
+                    Para una receta colombiana deliciosa, prueba las Arepas de Queso. Mezcla una taza de harina de maíz precocida con una pizca de sal y una taza de agua tibia hasta formar una masa homogénea. Agrega una taza de queso rallado y amasa bien. Forma pequeñas bolas con la masa y aplánalas hasta obtener discos de aproximadamente 1 cm de grosor. Calienta una sartén a fuego medio, añade un poco de mantequilla y cocina las arepas por ambos lados hasta que estén doradas y el queso se haya derretido.  </p>
+
+            </div>
+
+        </SECtion>
+        <!-- SECCION-3 -->
+
+        <SECtion>
+            <FIGure class="img-art">
+                <img src="./IMAGENES/comida saludable1.jpeg" alt="" width="900px" height="400px">>
+            </FIGure>
+
+            <div id="Saludable" class="cont-art">
+                <h2> Comida saludable</h2>
+                <p>La importancia de la comida saludable radica en su capacidad para proporcionar los nutrientes esenciales que el cuerpo necesita para funcionar correctamente. Una dieta equilibrada, rica en frutas, verduras, proteínas magras y granos enteros, no solo ayuda a mantener un peso adecuado, sino que también reduce el riesgo de enfermedades crónicas como la diabetes, enfermedades cardíacas y ciertos tipos de cáncer. Además, una alimentación saludable mejora la energía, la concentración y el estado de ánimo, contribuyendo a un bienestar general y una mejor calidad de vida. </p>
+
+            </div>
+
+        </SECtion>
+
+        <!-- PIE DE PAGINA -->
+
+        <FOoter>
+
+            <Address>Derechos reservados Cocineros.com</Address>
+
+            <div>
+                <a href="#">Facebook</a>-
+                <a href="#">Twiter</a>-
+                <a href="#">Instagram</a>
+    
+          </div>
+        </FOoter>
+        
+    </header>
+
+
+ 
+
+
+</div>
 </body>
+
 </html>
