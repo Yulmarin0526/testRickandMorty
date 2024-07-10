@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes de Rick and Morty</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .title {
+            margin: 30px 0;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .character-row {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 45px;
+        }
+        .character {
+            margin: 0 10px;
+            text-align: center;
+            border: 2px solid black; /* Borde para cada personaje */
+            padding: 20px; /* Espacio interior para separar el contenido del borde */
+            width: 220px; /* Ancho total del contenedor */
+        }
+        .character img {
+            width: 180px; /* Tamaño fijo para las imágenes */
+            height: 180px; /* Tamaño fijo para las imágenes */
+            object-fit: cover; /* Mantener proporción */
+            display: block;
+            margin: 0 auto 30px; /* Margen inferior para separar la imagen de la información */
+        }
+        .character-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .character-info {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">Personajes de Rick and Morty</div>
+
+    <div class="character-row">
+        <div class="character">
+            <img src="./imagenes/descarga.jpeg" alt="Rick Sanchez">
+            <div class="character-name">Rick Sanchez</div>
+            <div class="character-info">Género: Masculino<br>Especie: Humano</div>
+        </div>
+        <div class="character">
+            <img src="./imagenes/Morty Smith.jpeg" alt="Morty Smith">
+            <div class="character-name">Morty Smith</div>
+            <div class="character-info">Género: Masculino<br>Especie: Humano</div>
+        </div>
+        <div class="character">
+            <img src="./imagenes/Summer Sanchez.jpeg" alt="Summer Sanchez">
+            <div class="character-name">Summer Sanchez</div>
+            <div class="character-info">Género: Femenino<br>Especie: Humano</div>
+        </div>
+    </div>
+
+    <div class="character-row">
+        <div class="character">
+            <img src="./imagenes/Beth smith.jpeg" alt="Beth Smith">
+            <div class="character-name">Beth Smith</div>
+            <div class="character-info">Género: Femenino<br>Especie: Humano</div>
+        </div>
+        <div class="character">
+            <img src="./imagenes/Jerry Smith.jpeg" alt="Jerry Smith">
+            <div class="character-name">Jerry Smith</div>
+            <div class="character-info">Género: Masculino<br>Especie: Humano</div>
+        </div>
+    </div>
+</body>
+</html>
